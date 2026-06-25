@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stereolithography (SLA) for Precision 3D Printing — Niki NationBuilders</title>
+<meta name="description" content="Stereolithography (SLA) is a 3D printing method that uses ultraviolet (UV) light to cure liquid photopolymer resins layer by layer. The process relies on the…">
+<link rel="canonical" href="https://niki-nationbuilders.ca/articles/stereolithography-sla-for-precision-3d-printing.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stereolithography (SLA) for Precision 3D Printing — Niki NationBuilders">
+<meta property="og:description" content="Stereolithography (SLA) is a 3D printing method that uses ultraviolet (UV) light to cure liquid photopolymer resins layer by layer. The process relies on the…">
+<meta property="og:url" content="https://niki-nationbuilders.ca/articles/stereolithography-sla-for-precision-3d-printing.html">
+<meta property="og:site_name" content="Niki NationBuilders">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">Niki NationBuilders</a>
+<nav><a href="/">Home</a> <a href="/about.html">About</a></nav></header>
+<main>
+<article><h1>Stereolithography (SLA) for Precision 3D Printing</h1>
+<p class="meta">Grounded in primary-source research. Source: 3d-printing-additive-manufacturing-expert-depth.</p>
+<p>Stereolithography (SLA) is a 3D printing method that uses ultraviolet (UV) light to cure liquid photopolymer resins layer by layer. The process relies on the <strong>Jacobs working curve</strong>, a photopolymerization kinetic model that predicts how deeply UV light can cure resin based on factors like light intensity, resin absorption, and exposure energy. This guide breaks down the practical aspects of SLA, from hardware choices to post-processing, to help you achieve high-quality prints.</p>
+<h2>Hardware: Laser vs LED Systems</h2>
+<p>SLA systems fall into two main categories: <strong>laser-based</strong> and <strong>masked LED (MSLA)</strong>. Each has distinct trade-offs in speed, cost, and resolution.</p>
+<ul>
+<li><strong>Laser-based systems</strong> (e.g., Formlabs Form 3+, 3L Systems) use a 405 nm UV laser that scans the resin vat using galvanometer mirrors. These systems offer <strong>isotropic resolution</strong> (equal XY and Z precision), with layer heights as low as 25 µm. However, they are slower (2–3 layers per minute), more expensive ($3K–$15K), and limited to small build volumes (typically 145 × 82 × 100 mm).</li>
+</ul>
+<ul>
+<li><strong>LED-based systems</strong> (e.g., Anycubic Photon Mono X 6K, Elegoo Saturn S) use a 405 nm UV LED array with a DLP mask to cure entire layers simultaneously. This approach is faster (1 layer per 15–20 seconds), cheaper ($1.5K–$3K), and supports larger build platforms (e.g., 120 × 68 × 170 mm). However, they may show <strong>pixel artifacts</strong> on curved surfaces and have slightly coarser Z-axis resolution.</li>
+</ul>
+<p>Both systems require a <strong>resin vat with a PDMS (silicone) floor</strong> for adhesion, which flexes to peel cured layers away.</p>
+<h2>Resin Material Types and Applications</h2>
+<p>The choice of resin affects print quality, strength, and post-processing needs. Common resin categories include:</p>
+<ul>
+<li><strong>Standard/General Purpose</strong>: Tensile strength 55–70 MPa, elongation 5–10%. Suitable for prototyping and visual mockups.</li>
+<li><strong>Tough Resin</strong>: Tensile strength 45–65 MPa, elongation 40–60% (elastomeric). Ideal for flexible parts, hinges, and impact-resistant components.</li>
+<li><strong>Flexible Resin</strong>: Tensile strength 5–15 MPa, elongation 200–600%. Used for seals, gaskets, and custom-fit parts.</li>
+<li><strong>Castable/Investment Casting</strong>: Low ash content (&lt;1%) for clean metal casting. Requires post-curing and careful handling.</li>
+<li><strong>Biocompatible Resin</strong>: ISO 10993-certified for medical contact applications, though specific formulations vary by manufacturer.</li>
+</ul>
+<p>Always check resin datasheets for curing times, UV sensitivity, and compatibility with your printer’s light source.</p>
+<h2>Post-Processing Workflow</h2>
+<p>SLA prints require careful post-processing to remove uncured resin and achieve a polished finish. Follow these steps:</p>
+<p>1. <strong>Rinse and Clean</strong>: Submerge the print in isopropyl alcohol (IPA) or a dedicated resin wash solution to remove uncured material. Use a soft brush to dislodge residue. 2. <strong>Post-Cure</strong>: Place the print in a <strong>UV curing oven</strong> for 10–30 minutes to fully harden the resin. Follow manufacturer guidelines for temperature and time. 3. <strong>Support Removal</strong>: Use <strong>flush cutters</strong> or a hobby knife to remove support structures. Sand with fine-grit wet sandpaper (around 400 grit, progressing finer) for smooth surfaces. 4. <strong>Final Polish</strong>: For a glossy finish, use a <strong>UV-curable clear coat</strong> or a dedicated resin polishing compound.</p>
+<p>Avoid using harsh chemicals or abrasive tools that may damage the resin’s surface.</p>
+<h2>Key Specifications and Best Practices</h2>
+<ul>
+<li><strong>Resolution</strong>: Layer heights range from 25 µm (laser systems) to 50 µm (LED systems). Lower layers improve detail but increase print time.</li>
+<li><strong>Surface Finish</strong>: SLA prints have a smooth, glossy finish out of the box, but post-curing and polishing enhance this further.</li>
+<li><strong>Build Volume</strong>: Choose a system that matches your project’s size. Laser systems are better for small, intricate parts, while LED systems suit larger objects.</li>
+<li><strong>Light Intensity</strong>: Ensure your printer’s UV light source is calibrated to the resin’s exposure requirements. Underexposure leads to weak layers, while overexposure may cause warping.</li>
+</ul>
+<p>By selecting the right hardware, resin, and post-processing techniques, you can leverage SLA’s precision for complex 3D printing tasks.</p>
+<h2>Gear That Helps</h2>
+<ul>
+<li><strong>A resin vat with PDMS floor</strong> for optimal adhesion and layer peeling.</li>
+<li><strong>A 405 nm UV light source</strong> compatible with your resin type.</li>
+<li><strong>A motorized Z-axis platform</strong> for precise layer height control.</li>
+<li><strong>A UV curing oven</strong> for post-curing.</li>
+<li><strong>Resin materials</strong> (standard, tough, flexible, castable, biocompatible) tailored to your application.</li>
+<li><strong>Support removal tools</strong> (flush cutters, wet sandpaper) for finishing.</li>
+</ul>
+<p>Source: additive manufacturing process reference — stereolithography (vat photopolymerization).</p></article>
+</main>
+<footer class="site">
+<p><strong>Affiliate disclosure:</strong> some links may be affiliate links; we
+may earn a commission at no cost to you.</p>
+<p>© 2026 Niki NationBuilders. Guides are drafted with AI assistance
+and grounded in primary-source research; verify critical details for your own
+situation before acting.</p>
+</footer>
+</body>
+</html>
