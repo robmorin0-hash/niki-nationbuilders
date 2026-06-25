@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery Management Systems: Practical Guide for Off-Grid Use — Niki NationBuilders</title>
+<meta name="description" content="Battery Management Systems (BMS) are critical for maintaining safety, longevity, and efficiency in off-grid energy storage. This guide breaks down three core…">
+<link rel="canonical" href="https://niki-nationbuilders.ca/articles/battery-management-systems-practical-guide-for-off-grid-use.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Battery Management Systems: Practical Guide for Off-Grid Use — Niki NationBuilders">
+<meta property="og:description" content="Battery Management Systems (BMS) are critical for maintaining safety, longevity, and efficiency in off-grid energy storage. This guide breaks down three core…">
+<meta property="og:url" content="https://niki-nationbuilders.ca/articles/battery-management-systems-practical-guide-for-off-grid-use.html">
+<meta property="og:site_name" content="Niki NationBuilders">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">Niki NationBuilders</a>
+<nav><a href="/">Home</a> <a href="/about.html">About</a></nav></header>
+<main>
+<article><h1>Battery Management Systems: Practical Guide for Off-Grid Use</h1>
+<p class="meta">Grounded in primary-source research. Source: battery-designs-from-scratch-chemistry-build-depth.</p>
+<p>Battery Management Systems (BMS) are critical for maintaining safety, longevity, and efficiency in off-grid energy storage. This guide breaks down three core functions—state-of-charge (SOC) estimation, state-of-health (SOH) tracking, and thermal management—into actionable steps for system design and maintenance.</p>
+<h2>Coulomb Counting for SOC Estimation</h2>
+<p>Coulomb counting calculates SOC by integrating current over time. The formula $SOC(t) = \frac{Q(t)}{Q_{\max}} \times 100\%$ shows how stored charge (Q) relates to maximum capacity (Q_max). For example, a 100 Ah battery at 50% SOC (50 Ah stored) charges at 10 A for 4 hours, adding 40 Ah. The new SOC becomes 90% ((50 + 40)/100).</p>
+<p>However, this method accumulates errors over time due to sensor drift. To correct this, reset the coulomb counter daily or weekly using open-circuit voltage (OCV). For lithium iron phosphate (LFP) batteries, OCV varies predictably with SOC. A 4S (4-cell) LFP pack’s OCV lookup table is:</p>
+<p>| SOC (%) | OCV (V, 4S) | |---------|-------------| | 100     | 14.6        | | 80      | 13.8        | | 60      | 13.4        | | 40      | 13.0        | | 20      | 12.4        | | 0       | 10.0        |</p>
+<p>Measure OCV after a 2-hour rest period when the pack equilibrates, then adjust the coulomb counter to match the table. This calibration reduces drift errors and improves accuracy.</p>
+<h2>State of Health (SOH) Tracking</h2>
+<p>SOH measures a battery’s remaining capacity relative to its original value. The formula $SOH = \frac{\text{Current Max Capacity}}{\text{Original Capacity}} \times 100\%$ highlights degradation over time. To estimate SOH, fully charge and discharge the battery quarterly at a low C-rate (0.1C). For example, a 100 Ah battery discharged over 8–10 hours at 10 A (0.1C) will show its current capacity. Compare this to the baseline (original capacity). If the measured Ah drops below 80% of the baseline, flag the battery for inspection or replacement.</p>
+<p>LFP batteries typically degrade at 2–3% per year during the first 3 years (calendar + cycling effects), slowing to 0.5–1% per year afterward. At 2.5% annual degradation, an LFP battery reaches 80% SOH in 8 years. While still functional for lower-power applications, this marks the end of its "first life" and suggests repurposing or recycling.</p>
+<h2>Thermal Management in BMS</h2>
+<p>Temperature control prevents overheating, overcooling, and chemical degradation. Use NTC thermistors (Negative Temperature Coefficient) to monitor temperature. These sensors have a resistance drop of ~−4%/°C, with a typical 10k Ω resistance at 25°C. Measure voltage across a 10k Ω resistor and thermistor in a voltage divider, then calculate temperature using the Steinhart-Hart equation or a lookup table. Thermistors cost $1–5 each.</p>
+<p>Implement control logic to disable charging if the battery temperature exceeds 50°C or falls below 0°C (risk of lithium plating at low temps). Similarly, stop discharging if the temperature surpasses 80°C (runaway risk) or drops below −20°C (capacity loss). Log a thermal alert if the temperature gradient (dT/dt) exceeds 2°C/min, which may indicate a short circuit or high-power discharge.</p>
+<h2>Gear that Helps</h2>
+<ul>
+<li>NTC thermistors (10k Ω @ 25°C, $1–5 each) for temperature sensing</li>
+<li>A data logger for OCV and temperature monitoring</li>
+<li>A current sensor/shunt for coulomb counting</li>
+</ul>
+<p>Source: battery reference — BMS deep dive.</p></article>
+</main>
+<footer class="site">
+<p><strong>Affiliate disclosure:</strong> some links may be affiliate links; we
+may earn a commission at no cost to you.</p>
+<p>© 2026 Niki NationBuilders. Guides are drafted with AI assistance
+and grounded in primary-source research; verify critical details for your own
+situation before acting.</p>
+</footer>
+</body>
+</html>
