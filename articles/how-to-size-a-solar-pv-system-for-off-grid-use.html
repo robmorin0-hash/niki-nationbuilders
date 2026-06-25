@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Size a Solar PV System for Off-Grid Use — Niki NationBuilders</title>
+<meta name="description" content="Calculating the right size for a solar photovoltaic (PV) system is critical for off-grid living. A system that’s too small will fail to meet energy needs,…">
+<link rel="canonical" href="https://niki-nationbuilders.ca/articles/how-to-size-a-solar-pv-system-for-off-grid-use.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Size a Solar PV System for Off-Grid Use — Niki NationBuilders">
+<meta property="og:description" content="Calculating the right size for a solar photovoltaic (PV) system is critical for off-grid living. A system that’s too small will fail to meet energy needs,…">
+<meta property="og:url" content="https://niki-nationbuilders.ca/articles/how-to-size-a-solar-pv-system-for-off-grid-use.html">
+<meta property="og:site_name" content="Niki NationBuilders">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">Niki NationBuilders</a>
+<nav><a href="/">Home</a> <a href="/about.html">About</a></nav></header>
+<main>
+<article><h1>How to Size a Solar PV System for Off-Grid Use</h1>
+<p class="meta">Grounded in primary-source research. Source: off-grid-energy-renewable-systems-depth.</p>
+<p>Calculating the right size for a solar photovoltaic (PV) system is critical for off-grid living. A system that’s too small will fail to meet energy needs, while one that’s oversized wastes resources and costs. Proper sizing requires understanding local solar conditions, energy demands, and system losses. This guide provides actionable steps to design a reliable solar setup based on real-world data and engineering principles.</p>
+<h2>Step 1: Assess Your Solar Resource</h2>
+<p><strong>Peak Sun Hours (PSH)</strong> are the key metric for sizing. PSH represents how many hours of full sunlight (1000 W/m²) your location receives daily. This varies by latitude, season, and climate. For example:</p>
+<ul>
+<li>Southern US (Arizona, Southern California): 5–6 hours</li>
+<li>Mid-latitude US (Colorado, Tennessee): 4–5 hours</li>
+<li>Northern US (Minnesota, Maine): 3–4 hours</li>
+<li>Tropical regions (near equator): 4–6 hours</li>
+</ul>
+<p>Always use <strong>winter PSH</strong> for conservative design, as it’s 50–60% of summer values in mid-latitudes. For instance, if your location averages 4.5 PSH in Colorado, use 4.5 for calculations.</p>
+<h2>Step 2: Calculate Your PV Array Size</h2>
+<p>The formula to estimate the required PV array size is: <strong>Total Array Size (kW) = Daily Energy Demand (kWh) / (PSH × 0.75)</strong></p>
+<p>The 0.75 derating factor accounts for losses in real-world conditions, including:</p>
+<ul>
+<li>Temperature derating: Modules lose 0.45% efficiency per °C above 25°C.</li>
+<li>Wiring losses: 2–3%.</li>
+<li>Controller/inverter efficiency: 5–10%.</li>
+<li>Soiling (dust, pollen): 3–5%.</li>
+<li>Shading: Should be zero if designed properly.</li>
+</ul>
+<p><strong>Example 1:</strong> A 8 kWh/day demand in Colorado (PSH = 4.5):</p>
+<ul>
+<li>Array size = 8 / (4.5 × 0.75) = 2.37 kW</li>
+<li><strong>Select 2.4–2.5 kW DC array</strong> (6–8 × 400W modules).</li>
+</ul>
+<p><strong>Example 2:</strong> A 18 kWh/day demand in Colorado:</p>
+<ul>
+<li>Array size = 18 / 3.375 = 5.3 kW</li>
+<li><strong>Select 5.3–6 kW DC array</strong> (14–15 × 400W modules).</li>
+</ul>
+<h2>Step 3: Choose Modules and Configure Strings</h2>
+<p>Modern silicon (Si) PV modules typically have a rated power of 400–410 W at STC (Standard Test Conditions). Key specs include:</p>
+<ul>
+<li><strong>Vmp (Voltage at Max Power):</strong> 40–41 V</li>
+<li><strong>Imp (Current at Max Power):</strong> 10–10.2 A</li>
+<li><strong>Voc (Open-Circuit Voltage):</strong> 49–51 V</li>
+<li><strong>Isc (Short-Circuit Current):</strong> 10.5–11 A</li>
+</ul>
+<p>When wiring modules in <strong>series</strong>, total voltage increases, while <strong>parallel</strong> increases current. For a <strong>48 V battery system</strong>, use <strong>10–12 modules in series</strong> (410–492 V string voltage) to optimize MPPT efficiency. For a <strong>24 V system</strong>, use <strong>6–8 modules in series</strong> (246–328 V).</p>
+<p>MPPT charge controllers have input voltage ranges (e.g., 100–480 V for 48 V systems). Ensure the array string voltage stays within this range. For example, a 10-module string at STC produces 410 V, which is acceptable for a 480 V MPPT controller. But at -10°C, the voltage could rise to ~416 V, which is marginal. In very cold climates, use <strong>9 modules</strong> (369 V at STC, ~391 V at -20°C) to avoid exceeding MPPT limits.</p>
+<h2>Step 4: Account for Temperature Effects</h2>
+<p>PV module <strong>Voc</strong> decreases by <strong>-0.35% per °C above 25°C STC</strong>. Cold temperatures increase Voc, which can push string voltages beyond MPPT limits. For example:</p>
+<ul>
+<li>At -10°C, a 10-module string (410 V at STC) rises to ~416 V.</li>
+<li>At -20°C, the same string could reach ~420 V, risking damage.</li>
+</ul>
+<p>Always calculate cold-weather voltages to ensure safety. Adjust module counts or controller ranges as needed for your climate.</p>
+<h2>Gear that Helps</h2>
+<ul>
+<li>An MPPT charge controller</li>
+<li>A 100W monocrystalline PV panel</li>
+<li>A 48V battery bank</li>
+<li>A solar inverter</li>
+</ul>
+<p>Source: off-grid energy reference — solar PV system sizing.</p></article>
+</main>
+<footer class="site">
+<p><strong>Affiliate disclosure:</strong> some links may be affiliate links; we
+may earn a commission at no cost to you.</p>
+<p>© 2026 Niki NationBuilders. Guides are drafted with AI assistance
+and grounded in primary-source research; verify critical details for your own
+situation before acting.</p>
+</footer>
+</body>
+</html>
