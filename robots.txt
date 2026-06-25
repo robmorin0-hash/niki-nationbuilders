@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://niki-nationbuilders.ca/sitemap.xml
