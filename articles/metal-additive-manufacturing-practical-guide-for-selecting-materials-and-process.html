@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metal Additive Manufacturing: Practical Guide for Selecting Materials and Processes — Niki NationBuilders</title>
+<meta name="description" content="Metal additive manufacturing (AM) enables complex, high-performance parts through layer-by-layer fabrication. Two dominant techniques—Direct Metal Laser…">
+<link rel="canonical" href="https://niki-nationbuilders.ca/articles/metal-additive-manufacturing-practical-guide-for-selecting-materials-and-process.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Metal Additive Manufacturing: Practical Guide for Selecting Materials and Processes — Niki NationBuilders">
+<meta property="og:description" content="Metal additive manufacturing (AM) enables complex, high-performance parts through layer-by-layer fabrication. Two dominant techniques—Direct Metal Laser…">
+<meta property="og:url" content="https://niki-nationbuilders.ca/articles/metal-additive-manufacturing-practical-guide-for-selecting-materials-and-process.html">
+<meta property="og:site_name" content="Niki NationBuilders">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">Niki NationBuilders</a>
+<nav><a href="/">Home</a> <a href="/about.html">About</a></nav></header>
+<main>
+<article><h1>Metal Additive Manufacturing: Practical Guide for Selecting Materials and Processes</h1>
+<p class="meta">Grounded in primary-source research. Source: 3d-printing-additive-manufacturing-expert-depth.</p>
+<p>Metal additive manufacturing (AM) enables complex, high-performance parts through layer-by-layer fabrication. Two dominant techniques—Direct Metal Laser Sintering (DMLS) and Electron Beam Melting (EBM)—offer distinct capabilities for aerospace, medical, and industrial applications. This guide distills key considerations for selecting materials, process parameters, and equipment.</p>
+<h2>DMLS: Laser-Based Precision for Aerospace and Engineering</h2>
+<p>DMLS uses fiber lasers (1064 nm wavelength, 100–500 W) to sinter metal powders in an inert argon atmosphere. It excels in producing parts with mechanical properties approaching forged or cast equivalents, making it ideal for aerospace and industrial components.</p>
+<p><strong>Key Materials and Costs</strong></p>
+<ul>
+<li><strong>Ti-6Al-4V (Ti64)</strong>: Tensile strength 1000–1100 MPa, density 4.43 g/cm³, aerospace standard, powder costs $300–500/kg.</li>
+<li><strong>Inconel 718 (IN718)</strong>: Tensile strength 1200–1400 MPa, high-temperature resistance (600°C+), powder costs $400–600/kg.</li>
+<li><strong>Stainless 316L</strong>: Corrosion-resistant, biocompatible, tensile 500–650 MPa, powder costs $200–300/kg.</li>
+<li><strong>AlSi10Mg</strong>: Thermal conductivity applications, tensile 370–430 MPa, density 2.67 g/cm³, powder costs $150–250/kg.</li>
+<li><strong>Copper</strong>: High thermal/electrical conductivity, powder costs $250–350/kg.</li>
+</ul>
+<p><strong>Build Parameters</strong></p>
+<ul>
+<li>Layer thickness: 20–50 µm (higher resolution than SLS).</li>
+<li>Scan speed: 0.5–1.5 m/s.</li>
+<li>Laser power: 200–500 W (varies by material and layer thickness).</li>
+<li>Build rate: 10–50 cm³/hour (significantly slower than polymer AM).</li>
+<li>Support structures: 40–60% of part volume required for thermal management.</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>Residual stress from rapid thermal cycling (peak 1400°C cooling to 200°C in seconds) may require stress-relief heat treatment.</li>
+<li>Porosity defects (gas entrapment, lack of fusion) can occur; mitigate with higher energy input, slower speed, or better powder spreading.</li>
+<li>Surface roughness: Ra 4–6 µm as-built (better than powder bed systems but worse than machining).</li>
+<li>Support removal: Embedded titanium/steel supports often require cutting, grinding, or EDM.</li>
+</ul>
+<h2>EBM: Vacuum-Enhanced Speed for High-Temperature Alloys</h2>
+<p>EBM uses a high-energy electron beam (15–200 mA, 60 kV) in a vacuum chamber (10⁻⁴ Torr) to melt metal powder. It operates faster than DMLS and is suited for reactive or refractory materials.</p>
+<p><strong>Advantages Over DMLS</strong></p>
+<ul>
+<li>Build rate: 100–300 cm³/hour (3–10× faster than DMLS).</li>
+<li>Vacuum environment prevents oxidation, enabling titanium, aluminum, and other reactive materials.</li>
+<li>Lower residual stress due to preheating the powder bed to 400–600°C, reducing thermal shock.</li>
+<li>Coarser resolution acceptable (100–200 µm layers), ideal for large aerospace/industrial parts.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>High equipment cost: $2–4 million+ (not cost-effective for small-scale operations).</li>
+<li>Vacuum system complexity and maintenance requirements.</li>
+<li>Geometric constraints: Cannot print beneath existing material without support; overhangs are impossible.</li>
+<li>Charge buildup risk with non-conductive powders (requires conductive additives).</li>
+</ul>
+<p><strong>Applications</strong></p>
+<ul>
+<li><strong>Medical</strong>: Titanium implants for orthopedic and dental applications.</li>
+<li><strong>Aerospace</strong>: High-performance turbine components.</li>
+<li><strong>Thermal management</strong>: Copper EBM parts for heat dissipation.</li>
+</ul>
+<h2>Choosing Between DMLS and EBM</h2>
+<p>Select DMLS for parts requiring high resolution, complex geometries, or aerospace-grade materials like Ti64 or IN718. Opt for EBM when speed, vacuum compatibility, or refractory materials (e.g., titanium, aluminum) are critical. Both processes demand careful management of thermal stress, porosity, and support structures.</p>
+<h2>Gear that Helps</h2>
+<ul>
+<li>A high-powered fiber laser (1064 nm, 100–500 W) for DMLS.</li>
+<li>A vacuum chamber for EBM systems (10⁻⁴ Torr).</li>
+<li>A powder bed system with inert gas (argon) for DMLS.</li>
+<li>A stress-relief heat treatment oven for residual stress management.</li>
+<li>An EDM machine for removing embedded metal supports.</li>
+</ul>
+<p>Source: additive manufacturing process reference — metal AM (DMLS and EBM powder bed fusion).</p></article>
+</main>
+<footer class="site">
+<p><strong>Affiliate disclosure:</strong> some links may be affiliate links; we
+may earn a commission at no cost to you.</p>
+<p>© 2026 Niki NationBuilders. Guides are drafted with AI assistance
+and grounded in primary-source research; verify critical details for your own
+situation before acting.</p>
+</footer>
+</body>
+</html>
