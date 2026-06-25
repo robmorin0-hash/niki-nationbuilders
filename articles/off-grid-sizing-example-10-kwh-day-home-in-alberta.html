@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off-Grid Sizing Example: 10 kWh/Day Home in Alberta — Niki NationBuilders</title>
+<meta name="description" content="Designing an off-grid system for a 10 kWh/day home in Alberta requires balancing seasonal load variations, battery storage, and component sizing to ensure…">
+<link rel="canonical" href="https://niki-nationbuilders.ca/articles/off-grid-sizing-example-10-kwh-day-home-in-alberta.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Off-Grid Sizing Example: 10 kWh/Day Home in Alberta — Niki NationBuilders">
+<meta property="og:description" content="Designing an off-grid system for a 10 kWh/day home in Alberta requires balancing seasonal load variations, battery storage, and component sizing to ensure…">
+<meta property="og:url" content="https://niki-nationbuilders.ca/articles/off-grid-sizing-example-10-kwh-day-home-in-alberta.html">
+<meta property="og:site_name" content="Niki NationBuilders">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">Niki NationBuilders</a>
+<nav><a href="/">Home</a> <a href="/about.html">About</a></nav></header>
+<main>
+<article><h1>Off-Grid Sizing Example: 10 kWh/Day Home in Alberta</h1>
+<p class="meta">Grounded in primary-source research. Source: solar-pv-systems-design-installation-depth.</p>
+<p>Designing an off-grid system for a 10 kWh/day home in Alberta requires balancing seasonal load variations, battery storage, and component sizing to ensure reliability. This guide breaks down the practical steps to size a solar + battery system for a home with moderate heating needs, using real-world data from Alberta’s climate and energy usage patterns.</p>
+<h2>Designing for Seasonal Variability</h2>
+<p>The first step is to define the load profile based on seasonal energy use. A 10 kWh/day average assumes moderate heating and limited cooling, but winter months in Alberta can push demand to 15 kWh/day. To account for extended cloudy periods, the system must support <strong>3 days of autonomy</strong> without sunlight, requiring a <strong>minimum battery capacity of 45 kWh</strong> (15 kWh/day × 3 days).</p>
+<p>For system reliability, aim for <strong>95% availability</strong>, meaning outages are acceptable for about 18 days/year. This targets a <strong>20% state of charge (SOC) threshold</strong> for triggering a backup generator. The generator should recharge the battery and support critical loads during extended cloudy weather, ensuring the battery isn’t deeply discharged.</p>
+<h2>Sizing the Components</h2>
+<h3>PV Array: Matching Winter Demand</h3>
+<p>Alberta’s worst-case winter solar irradiance is <strong>3.0 PSH (peak sun hours)</strong> in December. To meet the 15 kWh/day winter demand, the solar array must generate <strong>6.7 kW minimum</strong> (15 kWh / (3.0 PSH × 0.75 efficiency)). A conservative specification of <strong>8 kW</strong> accounts for degradation and suboptimal tilt. This is achieved with <strong>20 × 400W monocrystalline panels</strong>, arranged in two parallel strings of 10 modules each.</p>
+<h3>Battery Bank: Storing Winter Energy</h3>
+<p>The battery must store <strong>45 kWh of usable energy</strong> at 80% depth of discharge (DoD), requiring <strong>56 kWh of LFP (lithium iron phosphate) nameplate capacity</strong>. A <strong>48V nominal system</strong> using <strong>8 × 6 kWh LFP modules</strong> (e.g., Linamax) provides flexibility and longevity. At $400/kWh, this costs <strong>$22,400</strong>.</p>
+<h3>Charge Controller: Managing Current and Efficiency</h3>
+<p>The array’s short-circuit current (Isc) is <strong>220 A</strong> (2 × 11A per module × 10 modules per string). An MPPT controller must handle <strong>275 A</strong> (220 A × 1.25). A <strong>150A dual-MPPT controller</strong> (e.g., Victron SmartSolar 150/100 × 2 units) provides sufficient capacity for the 8 kW array.</p>
+<h3>Inverter: Supporting Peak Loads</h3>
+<p>The system’s average continuous load is <strong>0.42 kW</strong>, but peak loads (e.g., a 2 kW well pump) require a <strong>6 kW surge capacity</strong>. A <strong>5 kW continuous, 10 kW peak inverter</strong> ensures compatibility with motors and electronics without overloading.</p>
+<h3>Generator: Backup Power for Extended Outages</h3>
+<p>A <strong>8 kW backup generator</strong> matches the solar array’s nominal capacity and supports full load during extended cloudy weather. At 50% load, it consumes <strong>1 gallon/hour</strong> of fuel, requiring <strong>~500 gallons seasonal storage</strong> for Alberta’s winter autonomy.</p>
+<h2>Cost and ROI Analysis</h2>
+<p>The total system cost ranges from <strong>$47,400 to $51,400</strong>, including components, installation, and permits. The <strong>cost per kWh</strong> is <strong>$4.70–$5.10</strong>, reflecting the high upfront investment in battery storage.</p>
+<p><strong>Annual savings</strong> from avoiding grid electricity (10 kWh/day × 365 days × $0.15/kWh) and generator fuel (500 gal/year × $2.50/gal) total <strong>$1,800</strong>. At this rate, the <strong>payback period is 26–29 years</strong>, assuming utility rates rise 2–3% annually. While the ROI is long-term, the system’s value lies in energy independence and resilience, especially in regions with unreliable grid access.</p>
+<h2>Gear that Helps</h2>
+<ul>
+<li>An MPPT charge controller</li>
+<li>A 400W monocrystalline solar panel</li>
+<li>6 kWh LFP battery modules</li>
+<li>A 5 kW continuous, 10 kW peak inverter</li>
+<li>A 8 kW backup generator</li>
+</ul>
+<p>Source: solar PV reference — off-grid sizing example.</p></article>
+</main>
+<footer class="site">
+<p><strong>Affiliate disclosure:</strong> some links may be affiliate links; we
+may earn a commission at no cost to you.</p>
+<p>© 2026 Niki NationBuilders. Guides are drafted with AI assistance
+and grounded in primary-source research; verify critical details for your own
+situation before acting.</p>
+</footer>
+</body>
+</html>
