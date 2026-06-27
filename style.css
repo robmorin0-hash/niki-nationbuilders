@@ -10,6 +10,10 @@ h1{font-size:2rem;line-height:1.2;margin:.5rem 0 1rem}
 h2{margin-top:2rem}
 a{color:var(--accent)}
 ul{padding-left:1.2rem}
+img{max-width:100%;height:auto;border-radius:6px}
+figure{margin:1.5rem 0}
+figure img{display:block;width:100%}
+figcaption{color:var(--muted);font-size:.85rem;margin-top:.4rem;text-align:center}
 footer.site{color:var(--muted);font-size:.85rem;border-top:1px solid #e7e3d7;margin-top:2rem}
 .spec{color:#b06000;font-size:.8em;font-weight:600}
 .post-list{list-style:none;padding:0}
